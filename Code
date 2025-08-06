@@ -1,0 +1,192 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مكتب واو للاستنساخ | 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
+                  inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 420px;
+      text-align: center;
+    }
+    img.main-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 24px;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      margin-bottom: 25px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 20px 0;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    h1::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+      border-radius: 3px;
+      margin: 15px auto;
+    }
+    p {
+      font-size: 17px;
+      margin: 15px 0 30px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    .highlight {
+      color: #ff6b6b;
+      font-weight: 700;
+      text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 15px 0;
+      padding: 16px 0;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .button:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+    .button img {
+      width: 28px;
+      height: 28px;
+      margin-left: 12px;
+    }
+    #message-container {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      margin: 15px 0;
+    }
+    #message-container.visible {
+      opacity: 1;
+      height: auto;
+    }
+    #message {
+      color: #ffcc00; /* bright yellow text */
+      font-weight: bold;
+      font-size: 17px;
+      padding: 15px;
+      background: rgba(255, 0, 0, 0.2); /* semi-transparent red background */
+      border: 2px solid #ffcc00; /* yellow border */
+      border-radius: 12px;
+      text-shadow: 0 0 5px #ffcc00;
+    }
+    #otherLinks {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+    #otherLinks.visible {
+      opacity: 1;
+      height: auto;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="main-img" src="https://i.imgur.com/4u4xFgT.png" alt="صورة المكتب" />
+    
+    <h1>مكتب واو للاستنساخ</h1>
+    <p>تابع صفحاتنا على الفيسبوك واحصل على <span class="highlight">خصم خاص ✅</span> من المكتب. !</p>
+    
+    <a class="button" href="https://www.facebook.com/profile.php?id=100069145874064" target="_blank" onclick="showMessage()">
+      <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook Icon"> فيسبوك
+    </a>
+    
+    <div id="message-container">
+      <div id="message">
+        ⚠️ الرجاء متابعة الصفحة للمتابعة إلى الروابط ...
+      </div>
+    </div>
+    
+    <div id="otherLinks">
+      <a class="button" href="https://www.instagram.com/wow20_17wow?igsh=MTlqb2RsZWxza2t2OQ==" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"> إنستغرام
+      </a>
+      <a class="button" href="https://t.me/wow123wow" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram Icon"> تيليجرام
+      </a>
+      <a class="button" href="https://wa.me/9647703344360" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Icon"> واتساب
+      </a>
+    </div>
+    
+    <div class="footer">
+      © 2025 مكتب واو للاستنساخ | جميع الحقوق محفوظة
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      const messageContainer = document.getElementById('message-container');
+      const otherLinks = document.getElementById('otherLinks');
+
+      // Show the message container
+      messageContainer.classList.add('visible');
+
+      setTimeout(() => {
+        // Hide message container completely
+        messageContainer.classList.remove('visible');
+        // Show other links
+        otherLinks.classList.add('visible');
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
